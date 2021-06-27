@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/models/model.dart';
 import 'package:travel_app/repository/repository.dart';
-import 'package:travel_app/widgets/horizontal_place_item.dart';
-import 'package:travel_app/widgets/icon_badge.dart';
-import 'package:travel_app/widgets/search_bar.dart';
-import 'package:travel_app/widgets/vertical_place_item.dart';
+import 'package:travel_app/widgets/sight_place.dart';
+import 'package:travel_app/widgets/place_item.dart';
 
 class SightHomeScreen extends StatelessWidget {
 
@@ -18,6 +15,7 @@ class SightHomeScreen extends StatelessWidget {
           buildVerticalList(),
         ],
       ),
+
     );
   }
 
@@ -33,7 +31,7 @@ class SightHomeScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
          SightRepository sr = new SightRepository();
               Map<String,dynamic> sight = sr.sights[index].toMap();
-          return HorizontalPlaceItem(sight: sight);
+          return SightPlace(sight: sight);
         },
       ),
     );
@@ -46,11 +44,11 @@ class SightHomeScreen extends StatelessWidget {
         primary: false,
         physics: NeverScrollableScrollPhysics(),
         shrinkWrap: true,
-        itemCount: 5,//sights.name == null ? 0 : sights.name.length,
+        itemCount: 1,//sights.name == null ? 0 : sights.name.length,
         itemBuilder: (BuildContext context, int index) {
           SightRepository sr = new SightRepository();
                     Map<String,dynamic> sight = sr.sights[index].toMap();
-                return HorizontalPlaceItem(sight: sight);
+                return PlaceItem(sight: sight);
         },
       ),
     );

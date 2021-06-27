@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/models/model.dart';
 
-class SightRepository{
+class AdventureRepository{
 
-  List<Sight>sights =[
+  List<Adventure>adventures =[
 
-    Sight(
+    Adventure(
         id: 1,
         rating: 4,
         name: "Hotel Dolah Amet & Suites",
@@ -17,7 +17,7 @@ class SightRepository{
         totalPrice: 60
     ),
 
-    Sight(
+    Adventure(
         id: 2,
         rating: 5,
         name: "Beach Mauris Blandit",
@@ -28,7 +28,7 @@ class SightRepository{
         duration: 4.0,
         totalPrice: 60
     ),
-    Sight(
+    Adventure(
         id: 3,
         rating: 6,
         name: "Ipsum Restaurant",
@@ -39,7 +39,7 @@ class SightRepository{
         duration: 4.0,
         totalPrice: 60
     ),
-    Sight(
+    Adventure(
         id: 4,
         rating: 5,
         name: "Curabitur Beach",
@@ -50,7 +50,7 @@ class SightRepository{
         duration: 4.0,
         totalPrice: 60
     ),
-    Sight(
+    Adventure(
         id: 5,
         rating: 5,
         name: "Tincidunt Pool",

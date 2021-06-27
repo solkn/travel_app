@@ -126,16 +126,7 @@ class SightDetailsScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                // alignment: Alignment.centerLeft,
-                // child: Text(
-                //   "Price:"+"${sr.sights[0].price}",
-                //   style: TextStyle(
-                //     fontWeight: FontWeight.bold,
-                //     fontSize: 17,
-                //   ),
-                //   maxLines: 1,
-                //   textAlign: TextAlign.left,
-                // ),
+
               ),
               SizedBox(height: 40),
 

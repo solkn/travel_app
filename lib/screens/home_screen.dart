@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/models/model.dart';
-import 'package:travel_app/repository/repository.dart';
 import 'package:travel_app/screens/sight_home_Screen.dart';
-import 'package:travel_app/widgets/horizontal_place_item.dart';
 import 'package:travel_app/widgets/icon_badge.dart';
-import 'package:travel_app/widgets/search_bar.dart';
-import 'package:travel_app/widgets/vertical_place_item.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -13,8 +8,6 @@ class HomeScreen extends StatefulWidget {
 
 }
 class HomeScreenState extends State<HomeScreen>with SingleTickerProviderStateMixin{
-
-  //final scaffoldKey = GlobalKey<ScaffoldState>();
 
   TabController controller;
   @override
