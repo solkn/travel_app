@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/homeScreen.dart';
 import 'package:travel_app/screens/sight_home_Screen.dart';
 import 'package:travel_app/widgets/icon_badge.dart';
 
@@ -18,7 +19,7 @@ class _SightMainScreenState extends State<SightMainScreen> {
         physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
         onPageChanged: onPageChanged,
-        children: List.generate(4, (index) => SightHomeScreen()),
+        children: List.generate(4, (index) => HomeScreen()),
       ),
       bottomNavigationBar: BottomAppBar(
         child: Row(

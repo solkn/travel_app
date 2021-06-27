@@ -7,46 +7,13 @@ import 'package:travel_app/widgets/search_bar.dart';
 import 'package:travel_app/widgets/vertical_place_item.dart';
 
 class SightHomeScreen extends StatelessWidget {
-  final Sight sights;
 
-  const SightHomeScreen({Key key, this.sights}) : super(key: key);
-  
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Explore",
-          style: TextStyle(
-            fontSize: 30.0,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        actions: <Widget>[
-          IconButton(
-            icon: IconBadge(
-              icon: Icons.notifications_none,
-            ),
-            onPressed: () {},
-          ),
-        ],
-      ),
-      body: ListView(
+    return Container(
+
+      child: ListView(
         children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(20.0),
-            child: Text(
-              "Explore",
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(20.0),
-            child: SearchBar(),
-          ),
           buildHorizontalList(context),
           buildVerticalList(),
         ],
