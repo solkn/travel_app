@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/screens/homeScreen.dart';
+import 'package:travel_app/screens/home_screen.dart';
 import 'package:travel_app/screens/sight_home_Screen.dart';
 import 'package:travel_app/widgets/icon_badge.dart';
 
-class SightMainScreen extends StatefulWidget {
+class MainScreen extends StatefulWidget {
   @override
-  _SightMainScreenState createState() => _SightMainScreenState();
+  _MainScreenState createState() => _MainScreenState();
 }
 
-class _SightMainScreenState extends State<SightMainScreen> {
+class _MainScreenState extends State<MainScreen> {
   PageController _pageController;
   int _page = 0;
 
