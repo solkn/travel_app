@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../screens/sight_details_screen.dart';
 
 class PlaceItem extends StatelessWidget {
-  final Map sight;
+  final Map travel;
 
-  PlaceItem({this.sight});
+  PlaceItem({this.travel});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class PlaceItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Image.asset(
-              "${sight["image"]}",
+              "${travel["image"]}",
               height: 70.0,
               width: 70.0,
               fit: BoxFit.cover,

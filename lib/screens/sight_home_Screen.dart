@@ -48,7 +48,7 @@ class SightHomeScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           SightRepository sr = new SightRepository();
                     Map<String,dynamic> sight = sr.sights[index].toMap();
-                return PlaceItem(sight: sight);
+                return PlaceItem(travel: sight);
         },
       ),
     );

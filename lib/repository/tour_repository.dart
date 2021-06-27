@@ -8,10 +8,10 @@ class TourRepository{
     Tour(
         id: 1,
         rating: 4,
-        name: "Hotel Dolah Amet & Suites",
-        location: "London, England",
+        name: "Axum",
+        location: "Axum, Ethiopia",
         price: 20.0,
-        image: "assets/1.jpeg",
+        image: "assets/6.jpg",
         available: "10:00--18:00 . Mon -- Sat",
         duration: 4.0,
         totalPrice: 60
@@ -20,10 +20,10 @@ class TourRepository{
     Tour(
         id: 2,
         rating: 5,
-        name: "Beach Mauris Blandit",
-        location: "Lisbon, Portugal",
+        name: "Lalibela",
+        location: "Wollo, Ethiopia",
         price: 20.0,
-        image: "assets/2.jpeg",
+        image: "assets/7.jpeg",
         available: "10:00--18:00 . Mon -- Sat",
         duration: 4.0,
         totalPrice: 60
@@ -31,10 +31,10 @@ class TourRepository{
     Tour(
         id: 3,
         rating: 6,
-        name: "Ipsum Restaurant",
-        location: "Paris, France",
+        name: "Abay River",
+        location: "Sekela, Ethiopia",
         price: 20.0,
-        image: "assets/3.jpeg",
+        image: "assets/8.jpeg",
         available: "10:00--18:00 . Mon -- Sat",
         duration: 4.0,
         totalPrice: 60
@@ -42,10 +42,10 @@ class TourRepository{
     Tour(
         id: 4,
         rating: 5,
-        name: "Curabitur Beach",
-        location: "Rome, Italy",
+        name: "Fasiledes Palace",
+        location: "Gondar, Ethiopia",
         price: 20.0,
-        image: "assets/4.jpeg",
+        image: "assets/9.jpg",
         available: "10:00--18:00 . Mon -- Sat",
         duration: 4.0,
         totalPrice: 60
@@ -53,10 +53,10 @@ class TourRepository{
     Tour(
         id: 5,
         rating: 5,
-        name: "Tincidunt Pool",
-        location: "Madrid, Spain",
+        name: "Lake Tana",
+        location: "Bahirdar, Ethiopia",
         price: 20.0,
-        image: "assets/5.jpeg",
+        image: "assets/10.jpg",
         available: "10:00--18:00 . Mon -- Sat",
         duration: 4.0,
         totalPrice: 60

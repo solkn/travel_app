@@ -33,6 +33,7 @@ class HomeScreenState extends State<HomeScreen>with SingleTickerProviderStateMix
             fontWeight: FontWeight.w600,
           ),
         ),
+        backgroundColor: Colors.blueAccent,
         actions: <Widget>[
           IconButton(
             icon: IconBadge(
