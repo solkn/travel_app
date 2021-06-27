@@ -8,8 +8,8 @@ class SightRepository{
     Sight(
         id: 1,
         rating: 4,
-        name: "Hotel Dolah Amet & Suites",
-        location: "London, England",
+        name: "NewHaven LightHouse",
+        location: "in Edinbergh, United Kingdom",
         price: 20.0,
         image: "assets/1.jpeg",
         available: "10:00--18:00 . Mon -- Sat",
