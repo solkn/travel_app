@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/models/model.dart';
 import 'package:travel_app/repository/repository.dart';
 import 'package:travel_app/widgets/adventure_place.dart';
 import 'package:travel_app/widgets/sight_place.dart';
 
 class AdventureHomeScreen extends StatelessWidget {
+  final Adventure adventures;
 
+  const AdventureHomeScreen({Key key, this.adventures}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -47,7 +50,7 @@ class AdventureHomeScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           AdventureRepository ar = new AdventureRepository();
           Map<String,dynamic> adventure = ar.adventures[index].toMap();
-          return SightPlace(sight: adventure);
+          return AdventurePlace(adventure: adventure);
         },
       ),
     );

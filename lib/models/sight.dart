@@ -9,7 +9,6 @@ class Sight{
     String image;
     String available;
     double duration;
-    //ProgressIndicator progressIndicator;
     double totalPrice;
 
     Sight({
@@ -21,7 +20,6 @@ class Sight{
         @required this.image,
         @required this.available,
         @required this.duration,
-        //@required this.progressIndicator,
         @required this.totalPrice
 
 });

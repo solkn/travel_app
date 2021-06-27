@@ -39,7 +39,7 @@ class SightHomeScreen extends StatelessWidget {
 
   buildVerticalList() {
     return Padding(
-      padding: EdgeInsets.all(20.0),
+      padding: EdgeInsets.all(10.0),
       child: ListView.builder(
         primary: false,
         physics: NeverScrollableScrollPhysics(),

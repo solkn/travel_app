@@ -11,10 +11,13 @@ class PlaceItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
 
-      padding: const EdgeInsets.only(bottom: 15.0),
+      padding: const EdgeInsets.only(bottom: 20.0),
       child:Container(
-        child: Row(children: <Widget>[
+        padding:EdgeInsets.fromLTRB(16.0,0,0,0),
+        child: Column(children: <Widget>[
+
         Row(
+          mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Text("Popular",
           style: TextStyle(
@@ -22,13 +25,12 @@ class PlaceItem extends StatelessWidget {
             fontSize: 16.0,
           ),
           maxLines: 1,
-          textAlign: TextAlign.left,
+          textAlign: TextAlign.start,
         ),
 
         ],
       ),
       SizedBox(height: 20),
-
       Row(children: <Widget>[
         Column(children: <Widget>[
           ClipRRect(
@@ -61,8 +63,9 @@ class PlaceItem extends StatelessWidget {
           Row(children: <Widget>[
             Text("14 april - 25 april 20201",
               style: TextStyle(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.normal,
                 fontSize: 16.0,
+                color: Colors.blueGrey[300],
               ),
               maxLines: 1,
               textAlign: TextAlign.left,

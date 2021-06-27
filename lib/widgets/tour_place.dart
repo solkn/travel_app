@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/screens/adventure_details_screen.dart';
+import 'package:travel_app/screens/tour_details_screen.dart';
 
-import '../screens/sight_details_screen.dart';
+class TourPlace extends StatelessWidget {
+  final Map tour;
 
-class AdventurePlace extends StatelessWidget {
-  final Map adventure;
-
-  AdventurePlace({this.adventure});
+  TourPlace({this.tour});
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +17,9 @@ class AdventurePlace extends StatelessWidget {
           child: Column(
             children: <Widget>[
               ClipRRect(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(25),
                 child: Image.asset(
-                  "${adventure["image"]}",
+                  "${tour["image"]}",
                   height: 178.0,
                   width: 140.0,
                   fit: BoxFit.cover,
@@ -35,7 +33,7 @@ class AdventurePlace extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (BuildContext context) {
-                return AdventureDetailsScreen();
+                return TourDetailsScreen();
               },
             ),
           );
